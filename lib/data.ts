@@ -1,96 +1,44 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'inboxme.srinivas@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi this is Srini, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    oldPortfolio: 'https://srinivasudhayasankarportfolio.netlify.app',
+    upworkProfile: 'https://www.linkedin.com/in/srinivas-udhayasankar/',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
+    { name: 'github', url: 'https://github.com/cheenusrinivas' },
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/srinivas-udhayasankar/',
+    },
+    { name: 'facebook', url: '' },
     { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
 ];
 
 export const MY_STACK = {
     frontend: [
-        {
-            name: 'JavaScript',
-            icon: '/logo/js.png',
-        },
-        {
-            name: 'TypeScript',
-            icon: '/logo/ts.png',
-        },
-        {
-            name: 'React',
-            icon: '/logo/react.png',
-        },
-        {
-            name: 'Next.js',
-            icon: '/logo/next.png',
-        },
-        {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
-        },
+        { name: 'JavaScript', icon: '/logo/js.png' },
+        { name: 'React', icon: '/logo/react.png' },
+        { name: 'HTML5', icon: '/logo/html.png' },
+        { name: 'CSS3', icon: '/logo/css.png' },
+        { name: 'Tailwind CSS', icon: '/logo/tailwind.png' },
+        { name: 'Bootstrap', icon: '/logo/bootstrap.svg' },
     ],
     backend: [
-        {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
+        { name: 'Node.js', icon: '/logo/node.png' },
+        { name: 'Express.js', icon: '/logo/express.png' },
+        { name: 'Python', icon: '/logo/python.png' },
+        { name: 'Django', icon: '/logo/django.png' },
     ],
     database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
+        { name: 'MySQL', icon: '/logo/mysql.svg' },
+        { name: 'MongoDB', icon: '/logo/mongodb.svg' },
+        { name: 'SQLite', icon: '/logo/sqlite.png' },
     ],
     tools: [
         {
@@ -98,211 +46,230 @@ export const MY_STACK = {
             icon: '/logo/git.png',
         },
         {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
-        },
-        {
             name: 'AWS',
             icon: '/logo/aws.png',
+        },
+        {
+            name: 'socket.io',
+            icon: '/logo/socket.io.png',
         },
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
+        title: 'Visual Genie — AI Image Captioning',
+        slug: 'visual-genie',
+        liveUrl: 'https://github.com/cheenusrinivas/Visual-Genie',
         year: 2025,
         description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
+      MSc Dissertation project — a full-stack AI web application that generates natural language captions for uploaded images using a fine-tuned BLIP transformer model.<br/><br/>
+
       Key Features:<br/>
       <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
+        <li>🧠 Fine-tuned BLIP model on Flickr30k dataset (2000 images)</li>
+        <li>🖼️ Upload any image and get an AI-generated caption instantly</li>
+        <li>🌐 Full Django web interface for easy interaction</li>
+        <li>⚡ PyTorch + HuggingFace Transformers backend</li>
+        <li>📱 Responsive design for all devices</li>
       </ul><br/>
-      
+
       Technical Highlights:
       <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
+        <li>Fine-tuned Salesforce BLIP model using AdamW optimizer</li>
+        <li>Trained on GPU (CUDA) in Google Colab</li>
+        <li>Deployed via Django with SQLite database</li>
+        <li>Multi-modal AI combining vision and language understanding</li>
       </ul>
       `,
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
+      Solo Developer & Researcher<br/>
       <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
+        <li>✅ Fine-tuned BLIP transformer model on custom dataset</li>
+        <li>🎨 Built Django web app frontend and backend</li>
+        <li>🔄 Integrated PyTorch model into Django views</li>
+        <li>🚀 Managed full ML pipeline from data to deployment</li>
       </ul>
       `,
         techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
+            'Python',
+            'Django',
+            'PyTorch',
+            'HuggingFace',
+            'BLIP',
+            'SQLite',
+            'Google Colab',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
+        thumbnail: '/projects/thumbnail/visual-genie.jpg',
+        longThumbnail: '/projects/long/visual-genie.jpg',
+        images: ['/projects/images/visual-genie-1.png'],
     },
     {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
+        title: 'Real-Time Collaborative Whiteboard',
+        slug: 'collaborative-whiteboard',
+        liveUrl: 'https://github.com/cheenusrinivas/Collaborative-Whiteboard',
+        year: 2025,
+        description: `
+      A multi-user whiteboard where drawing strokes sync live across all connected browsers in real time using WebSockets.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>🎨 Real-time drawing sync across multiple users</li>
+        <li>🏠 Create and join named rooms</li>
+        <li>🖊️ Colour picker, brush size, eraser tools</li>
+        <li>🗑️ Clear canvas for all users simultaneously</li>
+        <li>⚡ Sub-100ms latency using Socket.IO</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer<br/>
+      <ul>
+        <li>✅ Built Canvas API drawing engine from scratch</li>
+        <li>⚡ Implemented Socket.IO real-time sync</li>
+        <li>🔧 Built Node.js + Express backend with room management</li>
+        <li>🎨 Designed responsive UI with vanilla CSS</li>
+      </ul>
+      `,
         techStack: [
             'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
+            'Node.js',
+            'Socket.IO',
+            'Canvas API',
+            'Express.js',
+            'JavaScript',
         ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
+        thumbnail: '/projects/thumbnail/whiteboard.jpg',
+        longThumbnail: '/projects/long/whiteboard.jpg',
+        images: ['/projects/images/whiteboard-1.png'],
     },
     {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
+        title: 'Voice-Enabled AI Chatbot',
+        slug: 'voice-chatbot',
+        liveUrl: 'https://github.com/cheenusrinivas/Voice-Chatbot-AI',
+        year: 2024,
+        description: `
+      A voice-enabled conversational AI chatbot for government services that listens to spoken queries, understands intent using BERT, and speaks back responses.<br/><br/>
 
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+      Key Features:<br/>
+      <ul>
+        <li>🎤 Speech-to-Text using Google Speech Recognition</li>
+        <li>🧠 BERT intent classification (HuggingFace)</li>
+        <li>🔊 Text-to-Speech responses using gTTS</li>
+        <li>🗄️ Firebase Firestore interaction logging</li>
+        <li>📊 Query analytics dashboard</li>
+      </ul>
+      `,
+        role: `
+      Solo Developer<br/>
+      <ul>
+        <li>✅ Built end-to-end voice AI pipeline</li>
+        <li>🧠 Integrated BERT for intent recognition</li>
+        <li>🔥 Connected Firebase for real-time logging</li>
+        <li>📊 Built analytics from interaction logs</li>
+      </ul>
+      `,
+        techStack: [
+            'Python',
+            'BERT',
+            'HuggingFace',
+            'SpeechRecognition',
+            'gTTS',
+            'Firebase',
+            'Pandas',
+        ],
+        thumbnail: '/projects/thumbnail/voice-chatbot.jpg',
+        longThumbnail: '/projects/long/voice-chatbot.jpg',
+        images: ['/projects/images/voice-chatbot-1.png'],
+    },
+    {
+        title: 'LSTM Seq2Seq Chatbot',
+        slug: 'lstm-chatbot',
+        liveUrl: 'https://github.com/cheenusrinivas/ChatBot-Using-LSTM',
+        year: 2024,
+        description: `
+      A conversational AI chatbot built using Sequence-to-Sequence LSTM neural networks, trained on the ChatterBot English dataset.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>🧠 Encoder-Decoder LSTM architecture</li>
+        <li>💬 Trained on ChatterBot dataset (Q&A pairs)</li>
+        <li>📱 Converted to TFLite for mobile deployment</li>
+        <li>⚡ Real-time response generation</li>
+      </ul>
+      `,
+        role: `Solo Developer & Researcher`,
+        techStack: [
+            'Python',
+            'TensorFlow',
+            'Keras',
+            'LSTM',
+            'Seq2Seq',
+            'TFLite',
+            'Google Colab',
+        ],
+        thumbnail: '/projects/thumbnail/lstm-chatbot.jpg',
+        longThumbnail: '/projects/long/lstm-chatbot.jpg',
+        images: ['/projects/images/lstm-chatbot-1.png'],
+    },
+    {
+        title: 'Lifeline Roofing & Masonry',
+        slug: 'lifeline-roofing',
+        liveUrl: 'https://lifelineroofingandmasonry.com',
+        year: 2024,
+        description: `
+      A full-service business website built for a Canadian roofing and masonry company based in Toronto. Delivered end-to-end by Salt Corp Solutions.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>🏗️ Hero carousel with service highlights</li>
+        <li>📂 Filterable project portfolio gallery</li>
+        <li>⭐ Customer testimonials section</li>
+        <li>🗺️ Google Maps integration</li>
+        <li>📧 Working contact form</li>
+        <li>📱 Fully responsive design</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer (Salt Corp Solutions)<br/>
+      <ul>
+        <li>✅ Designed and built entire website</li>
+        <li>🗺️ Integrated Google Maps API</li>
+        <li>📱 Ensured mobile responsiveness</li>
+        <li>🚀 Managed deployment and hosting</li>
+      </ul>
+      `,
+        techStack: [
+            'HTML5',
+            'CSS3',
+            'JavaScript',
+            'Bootstrap',
+            'Google Maps API',
+        ],
+        thumbnail: '/projects/thumbnail/lifeline.jpg',
+        longThumbnail: '/projects/long/lifeline.jpg',
+        images: ['/projects/images/lifeline-1.png'],
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Co-Founder & Web Solutions Lead',
+        company: 'Salt Corp Solutions',
+        duration: 'Oct 2023 - Present',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        title: 'Technical Advisor',
+        company: 'Concentrix',
+        duration: 'Apr 2024 - Jul 2024',
     },
     {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        title: 'Associate Software Engineer',
+        company: 'Prodapt Solutions',
+        duration: 'Feb 2023 - Mar 2024',
     },
     {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Full-Stack Developer Intern',
+        company: 'Besant Technologies',
+        duration: 'May 2022 - Jan 2023',
     },
 ];
