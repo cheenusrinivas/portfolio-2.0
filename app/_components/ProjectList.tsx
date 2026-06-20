@@ -1,4 +1,5 @@
 'use client';
+import ProjectThumbnail from '@/components/ProjectThumbnail';
 import SectionTitle from '@/components/SectionTitle';
 import { PROJECTS } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -115,22 +116,19 @@ const ProjectList = () => {
                             ref={imageContainer}
                         >
                             {PROJECTS.map((project) => (
-                                <Image
-                                    src={project.thumbnail}
-                                    alt="Project"
-                                    width="400"
-                                    height="500"
+                                <div
                                     className={cn(
-                                        'absolute inset-0 transition-all duration-500 w-full h-full object-cover',
+                                        'absolute inset-0 transition-all duration-500 w-full h-full',
                                         {
                                             'opacity-0':
                                                 project.slug !==
                                                 selectedProject,
                                         },
                                     )}
-                                    ref={imageRef}
                                     key={project.slug}
-                                />
+                                >
+                                    <ProjectThumbnail project={project} />
+                                </div>
                             ))}
                         </div>
                     )}

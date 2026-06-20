@@ -1,3 +1,4 @@
+import ProjectThumbnail from '@/components/ProjectThumbnail';
 import TransitionLink from '@/components/TransitionLink';
 import { cn } from '@/lib/utils';
 import { IProject } from '@/types';
@@ -108,17 +109,9 @@ const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
             onMouseLeave={handleMouseLeave}
         >
             {selectedProject === null && (
-                <Image
-                    src={project.thumbnail}
-                    alt="Project"
-                    width="300"
-                    height="200"
-                    className={cn(
-                        'w-full object-cover mb-6 aspect-[3/2] object-top',
-                    )}
-                    key={project.slug}
-                    loading="lazy"
-                />
+                <div className="mb-6">
+                    <ProjectThumbnail project={project} />
+                </div>
             )}
             <div className="flex gap-2 md:gap-5">
                 <div className="font-anton text-muted-foreground">

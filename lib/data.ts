@@ -58,6 +58,53 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
+        title: 'JobTrack — AI-Powered Job Application Tracker',
+        slug: 'jobtrack',
+        liveUrl: 'https://github.com/cheenusrinivas/JobTracker',
+        year: 2026,
+        description: `
+  A full-stack job application tracker with AI-powered Gmail sync — automatically detects job-related emails and logs them to your dashboard.<br/><br/>
+
+  Key Features:<br/>
+  <ul>
+    <li>🔐 Google Sign-In authentication with database-backed sessions</li>
+    <li>📊 Live dashboard — total applications, response rate, offers, status breakdown pie chart</li>
+    <li>🎯 Inline status updates — click and change status instantly, no page reload</li>
+    <li>🤖 AI Gmail Sync — scans inbox for job-related emails and auto-extracts company, role, and status using Gemini AI</li>
+    <li>🎨 Clean, modern UI built with Tailwind CSS</li>
+  </ul><br/>
+
+  Technical Highlights:
+  <ul>
+    <li>Server Actions for all data mutations — no separate REST API needed</li>
+    <li>PostgreSQL (Neon) + Prisma ORM for type-safe database access</li>
+    <li>Gmail API integration with OAuth scopes for inbox reading</li>
+    <li>Prompt-engineered Gemini AI calls with retry logic for structured data extraction</li>
+  </ul>
+  `,
+        role: `
+  Solo Full-Stack Developer<br/>
+  <ul>
+    <li>✅ Built complete auth system with NextAuth + Prisma adapter</li>
+    <li>🗄️ Designed and implemented PostgreSQL schema</li>
+    <li>🤖 Integrated Gmail API and Gemini AI for automated data entry</li>
+    <li>📊 Built data visualizations with Recharts</li>
+  </ul>
+  `,
+        techStack: [
+            'Next.js',
+            'TypeScript',
+            'PostgreSQL',
+            'Prisma',
+            'NextAuth',
+            'Gemini AI',
+            'Tailwind CSS',
+        ],
+        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
+        longThumbnail: '/projects/long/resume-roaster.jpg',
+        images: ['/projects/images/resume-roaster-1.png'],
+    },
+    {
         title: 'Visual Genie — AI Image Captioning',
         slug: 'visual-genie',
         liveUrl: 'https://github.com/cheenusrinivas/Visual-Genie',
