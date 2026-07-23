@@ -1,10 +1,8 @@
 import ProjectThumbnail from '@/components/ProjectThumbnail';
 import TransitionLink from '@/components/TransitionLink';
-import { cn } from '@/lib/utils';
 import { IProject } from '@/types';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import Image from 'next/image';
 import { useRef } from 'react';
 
 interface Props {
